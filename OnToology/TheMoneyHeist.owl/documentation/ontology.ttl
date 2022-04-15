@@ -1,0 +1,891 @@
+@prefix : <http://www.semanticweb.org/oventura/TheMoneyHeist#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/oventura/TheMoneyHeist#> .
+
+<http://www.semanticweb.org/oventura/TheMoneyHeist> rdf:type owl:Ontology ;
+                                                     :authors """@authors:  
+Sergio Torres Maiquez
+Oscar Ventura Romero"""@es ;
+                                                     :ontology_name """Serie: \"The Money Heist\"
+Serie: \"La Casa de Papel\"""" ;
+                                                     rdfs:comment "Comment: Desarrollar una ontología sobre la información de una serie de televisión."@es ;
+                                                     rdfs:label "Link: https://la-casa-de-papel.fandom.com/es/wiki/La_Casa_de_Papel" ;
+                                                     rdfs:sameAs "https://es.dbpedia.org/page/La_casa_de_papel" ;
+                                                     owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#authors
+:authors rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name
+:ontology_name rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:comment "Título de la ontología" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdfs:comment "Versión de la ontología" .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2003/11/swrl#equal
+<http://www.w3.org/2003/11/swrl#equal> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#lessThan
+<http://www.w3.org/2003/11/swrl#lessThan> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast
+:Has_Cast rdf:type owl:ObjectProperty ,
+                   owl:TransitiveProperty ;
+          rdfs:domain :Cast ;
+          rdfs:range :Episodic ,
+                     :Main ,
+                     :Secondary ,
+                     :Tertiary ;
+          rdfs:comment "Corresponde al nivel de participación del personaje en la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character
+:Has_Character rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Bank_Workers ,
+                          :Customers ,
+                          :GEOs ,
+                          :Hostage ,
+                          :Military ,
+                          :Mint_Workers ,
+                          :Negotiator ,
+                          :Others ,
+                          :Police ,
+                          :Police_Agent ,
+                          :Police_Chief ,
+                          :Robber ,
+                          :Security_Forces ;
+               rdfs:comment "Corresponde al rol del personaje en la serie. (Atracador, policia, extras, etc.)" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender
+:Has_Gender rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Person ;
+            rdfs:range :Actor ,
+                       :Actress ;
+            rdfs:comment "Nos indica el genero del personaje, masculino o femenino." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute
+:Has_ProminentAttribute rdf:type owl:ObjectProperty ,
+                                 owl:TransitiveProperty ;
+                        rdfs:domain :Character ;
+                        rdfs:range :Robber ;
+                        rdfs:comment "Nos indica la cualidad más destacable del miembro de la banda." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead
+:Has_Dead rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Robber ,
+                      :Security_Forces ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Nos indica si un miembro de la banda muere durante la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName
+:Has_NickName rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Robber ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Nos indica el apodo e algunos de los miembros de la banda." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter
+:Has_NumberChapter rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Character ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "Cooresponde a los número de los capítulos" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role
+:Has_Role rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Bank_Workers ,
+                      :Customers ,
+                      :Hostage ,
+                      :Military ,
+                      :Mint_Workers ,
+                      :Others ,
+                      :Police ,
+                      :Robber ,
+                      :Security_Forces ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Nos indica el rol de los actores de la serie." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       owl:disjointWith :Actress ;
+       rdfs:comment "Los actores masculinos de la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Actress
+:Actress rdf:type owl:Class ;
+         rdfs:subClassOf :Person ;
+         rdfs:comment "Las actrices femeninas de la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers
+:Bank_Workers rdf:type owl:Class ;
+              rdfs:subClassOf :Hostage ;
+              owl:disjointWith :Customers ;
+              rdfs:comment "Trabajadores del Banco de España" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain
+:Bank_of_Spain rdf:type owl:Class ;
+               rdfs:subClassOf :Location ;
+               rdfs:comment "Es el Banco de España, donde se desarrollan dos temporadas de la serie." ;
+               rdfs:sameAs "https://es.dbpedia.org/page/Banco_de_Espa%C3%B1a" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Cast
+:Cast rdf:type owl:Class ;
+      rdfs:subClassOf :Serie ;
+      rdfs:comment "El reparto de los actores según su participación en la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Character
+:Character rdf:type owl:Class ;
+           rdfs:comment "Los diferentes roles de los actores que han participado en la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House
+:Country_House rdf:type owl:Class ;
+               rdfs:subClassOf :Lair ;
+               rdfs:comment "Casa de campo donde se reunen para organizar las estrategias de los robos." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Customers
+:Customers rdf:type owl:Class ;
+           rdfs:subClassOf :Hostage ;
+           rdfs:comment "Clientes del banco" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic
+:Episodic rdf:type owl:Class ;
+          rdfs:subClassOf :Cast ;
+          rdfs:comment "Reparto Episódico" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part
+:First_Part rdf:type owl:Class ;
+            rdfs:subClassOf :First_Season ;
+            rdfs:comment "Primera Parte" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season
+:First_Season rdf:type owl:Class ;
+              rdfs:subClassOf :Seasons ;
+              rdfs:comment "Primera Temporada" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part
+:Fourth_Part rdf:type owl:Class ;
+             rdfs:subClassOf :Second_Season ;
+             rdfs:comment "Cuarta Parte" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs
+:GEOs rdf:type owl:Class ;
+      rdfs:subClassOf :Police ;
+      rdfs:comment "Cuerpo Especial de la Policia GEOs" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar
+:Hangar rdf:type owl:Class ;
+        rdfs:subClassOf :Lair ;
+        rdfs:comment "Lugar de la primera y segunda parte donde se esconde \"El Profesor\". Angar" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage
+:Hostage rdf:type owl:Class ;
+         rdfs:subClassOf :Character ;
+         rdfs:comment "Tenemos los actores trabajadores y los clientes" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Lair
+:Lair rdf:type owl:Class ;
+      rdfs:subClassOf :Location ;
+      rdfs:comment "Lugares donde tenemos las ubicaciones donde se encuentra el líder de los atracadores, “El Profesor” y donde se reúnen todos." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Diferentes ubicaciones y lugares principales donde se ha desarrollado la serie y las principales escenas." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Main
+:Main rdf:type owl:Class ;
+      rdfs:subClassOf :Cast ;
+      rdfs:comment "Reparto Principal" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Military
+:Military rdf:type owl:Class ;
+          rdfs:subClassOf :Security_Forces ;
+          owl:disjointWith :Police ;
+          rdfs:comment "Equipo de Militares" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers
+:Mint_Workers rdf:type owl:Class ;
+              rdfs:subClassOf :Hostage ;
+              rdfs:comment "Trabajadores de la Fábrica Nacional de la Moneda y Timbre" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory
+:National_Currency_and_Stamp_Factory rdf:type owl:Class ;
+                                     rdfs:subClassOf :Location ;
+                                     rdfs:comment "Es la Fábrica de la Casa de la Moneda y Timbre, donde se desarrollan varias temperadas de la serie." ;
+                                     rdfs:sameAs "https://es.dbpedia.org/page/F%C3%A1brica_Nacional_de_Moneda_y_Timbre" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator
+:Negotiator rdf:type owl:Class ;
+            rdfs:subClassOf :Police ;
+            rdfs:comment "Negociadores" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Others
+:Others rdf:type owl:Class ;
+        rdfs:subClassOf :Character ;
+        rdfs:comment "Tenemos los actores extras, público, esporádicos, etc." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Identificación de los actores, diferenciados por sexo." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Police
+:Police rdf:type owl:Class ;
+        rdfs:subClassOf :Security_Forces ;
+        rdfs:comment "Equipo de Policias" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent
+:Police_Agent rdf:type owl:Class ;
+              rdfs:subClassOf :Police ;
+              rdfs:comment "Agentes de Policia" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief
+:Police_Chief rdf:type owl:Class ;
+              rdfs:subClassOf :Police ;
+              rdfs:comment "Jefe de la Policia" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent
+:Police_Tent rdf:type owl:Class ;
+             rdfs:subClassOf :Location ;
+             rdfs:comment "Es la carpa de la policía, donde se desarrolla toda la estrategia de negociación de la policía con los atracadores." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf :Location ;
+            rdfs:comment "Es el restaurante de la primera y segunda temporada donde el profesor conoce a la primera negociadora de la policía." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Robber
+:Robber rdf:type owl:Class ;
+        rdfs:subClassOf :Character ;
+        rdfs:comment "Tenemos los actores que son atracadores." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons
+:Seasons rdf:type owl:Class ;
+         rdfs:subClassOf :Serie ;
+         rdfs:comment "Las temporadas de la serie y sus partes." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part
+:Second_Part rdf:type owl:Class ;
+             rdfs:subClassOf :First_Season ;
+             rdfs:comment "Segunda Parte" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season
+:Second_Season rdf:type owl:Class ;
+               rdfs:subClassOf :Seasons ;
+               rdfs:comment "Segunda Temporada" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary
+:Secondary rdf:type owl:Class ;
+           rdfs:subClassOf :Cast ;
+           rdfs:comment "Reparto Secundario" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces
+:Security_Forces rdf:type owl:Class ;
+                 rdfs:subClassOf :Character ;
+                 rdfs:comment "Tenemos los actores de la policía y de los militares." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Serie
+:Serie rdf:type owl:Class ;
+       rdfs:comment "Encontramos el reparto de los actores identificados en principal, segundario, terciario y episódico, y las temporadas de la serie." .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary
+:Tertiary rdf:type owl:Class ;
+          rdfs:subClassOf :Cast ;
+          rdfs:comment "Reparto Terciario" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part
+:Third_Part rdf:type owl:Class ;
+            rdfs:subClassOf :Second_Season ;
+            rdfs:comment "Tercera Parte" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank
+:Warehouse_Water_Tank rdf:type owl:Class ;
+                      rdfs:subClassOf :Lair ;
+                      rdfs:comment "Lugar de la tercera y cuarta parte donde se esconde \"El Profesor\". Almacen de tanques de agua." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Alberto_Vicuña
+:Alberto_Vicuña rdf:type owl:NamedIndividual ,
+                         :Police_Agent .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Alfonso_Egea
+:Alfonso_Egea rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Alicia_Sierra
+:Alicia_Sierra rdf:type owl:NamedIndividual ,
+                        :Negotiator .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker
+:Alison_Parker rdf:type owl:NamedIndividual ,
+                        :Customers ;
+               :Has_NumberChapter 21 .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Ariadna_Cascales
+:Ariadna_Cascales rdf:type owl:NamedIndividual ,
+                           :Customers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Arturo_Román
+:Arturo_Román rdf:type owl:NamedIndividual ,
+                       :Mint_Workers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Benito_Antoñanzas
+:Benito_Antoñanzas rdf:type owl:NamedIndividual ,
+                            :Police_Agent .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín
+:Berlín rdf:type owl:NamedIndividual ,
+                 :Robber ;
+        :Has_NumberChapter 30 ;
+        rdfs:sameAs "https://es.dbpedia.org/page/Berl%C3%ADn" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Bogotá
+:Bogotá rdf:type owl:NamedIndividual ,
+                 :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Cincinnati
+:Cincinnati rdf:type owl:NamedIndividual ,
+                     :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Comisario_Sánchez
+:Comisario_Sánchez rdf:type owl:NamedIndividual ,
+                            :Police_Chief .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Compañero_de_celda_de_Berlón
+:Compañero_de_celda_de_Berlón rdf:type owl:NamedIndividual ,
+                                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Prieto
+:Coronel_Prieto rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Tamayo
+:Coronel_Tamayo rdf:type owl:NamedIndividual ,
+                         :Police_Chief .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#César_Gandía
+:César_Gandía rdf:type owl:NamedIndividual ,
+                       :Bank_Workers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Denver
+:Denver rdf:type owl:NamedIndividual ,
+                 :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor
+:El_Profesor rdf:type owl:NamedIndividual ,
+                      :Actor ,
+                      :Country_House ,
+                      :Hangar ,
+                      :Robber ,
+                      :Warehouse_Water_Tank ;
+             :Has_NickName "El Profesor" ;
+             :Has_NumberChapter 41 ;
+             rdfs:sameAs "https://es.dbpedia.org/page/%C3%81lvaro_Morte" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Estocolmo
+:Estocolmo rdf:type owl:NamedIndividual ,
+                    :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Farmacétuica
+:Farmacétuica rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki
+:Helsinki rdf:type owl:NamedIndividual ,
+                   :Robber ;
+          rdfs:sameAs "https://dbpedia.org/page/Helsinki" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Jacinto
+:Jacinto rdf:type owl:NamedIndividual ,
+                  :Mint_Workers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Joao
+:Joao rdf:type owl:NamedIndividual ,
+               :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero
+:Julia_Otero rdf:type owl:NamedIndividual ,
+                      :Actress ,
+                      :Others ;
+             rdfs:sameAs "https://es.dbpedia.org/page/Julia_Otero" .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Laura
+:Laura rdf:type owl:NamedIndividual ,
+                :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Lisboa
+:Lisboa rdf:type owl:NamedIndividual ,
+                 :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Logroño
+:Logroño rdf:type owl:NamedIndividual ,
+                  :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Río
+:Madre_de_Río rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio
+:Madre_de_Tokio rdf:type owl:NamedIndividual ,
+                         :Others ;
+                :Has_NumberChapter 1 .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Manila
+:Manila rdf:type owl:NamedIndividual ,
+                 :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mari_Carmen
+:Mari_Carmen rdf:type owl:NamedIndividual ,
+                      :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mariví_Fuentes
+:Mariví_Fuentes rdf:type owl:NamedIndividual ,
+                         :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Marsella
+:Marsella rdf:type owl:NamedIndividual ,
+                   :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Colmenar
+:Mercedes_Colmenar rdf:type owl:NamedIndividual ,
+                            :Customers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Pascua
+:Mercedes_Pascua rdf:type owl:NamedIndividual ,
+                          :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Moscú
+:Moscú rdf:type owl:NamedIndividual ,
+                :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Médico
+:Médico rdf:type owl:NamedIndividual ,
+                 :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Mónica_Gaztambide
+:Mónica_Gaztambide rdf:type owl:NamedIndividual ,
+                            :Mint_Workers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Nacho_Abad
+:Nacho_Abad rdf:type owl:NamedIndividual ,
+                     :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Nairobi
+:Nairobi rdf:type owl:NamedIndividual ,
+                  :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Nikolai_Dimitrievich
+:Nikolai_Dimitrievich rdf:type owl:NamedIndividual ,
+                               :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo
+:Oslo rdf:type owl:NamedIndividual ,
+               :Robber ;
+      :Has_NumberChapter 16 .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Pablo_Ruiz
+:Pablo_Ruiz rdf:type owl:NamedIndividual ,
+                     :Customers .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Paco
+:Paco rdf:type owl:NamedIndividual ,
+               :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Palermo
+:Palermo rdf:type owl:NamedIndividual ,
+                  :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Pamplona
+:Pamplona rdf:type owl:NamedIndividual ,
+                   :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Paula_Vicuña
+:Paula_Vicuña rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_1
+:Periodista_1 rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_2
+:Periodista_2 rdf:type owl:NamedIndividual ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Pilar
+:Pilar rdf:type owl:NamedIndividual ,
+                :Police_Agent .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Presentadora_de_Informativos
+:Presentadora_de_Informativos rdf:type owl:NamedIndividual ,
+                                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Raquel_Murillo
+:Raquel_Murillo rdf:type owl:NamedIndividual ,
+                         :Negotiator .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Río
+:Río rdf:type owl:NamedIndividual ,
+              :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Sofía
+:Sofía rdf:type owl:NamedIndividual ,
+                :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso
+:Susana_Griso rdf:type owl:NamedIndividual ,
+                       :Actress ,
+                       :Others .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Suárez
+:Suárez rdf:type owl:NamedIndividual ,
+                 :GEOs .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Tokio
+:Tokio rdf:type owl:NamedIndividual ,
+                :Robber .
+
+
+###  http://www.semanticweb.org/oventura/TheMoneyHeist#Ángel_Rubio
+:Ángel_Rubio rdf:type owl:NamedIndividual ,
+                      :Police_Agent .
+
+
+[ rdfs:comment ""
+] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:authors rdfs:comment "Autores" .
+
+
+:ontology_name rdfs:comment "Nombre de la Ontología" .
+
+
+rdfs:comment rdfs:comment "Comentarios" .
+
+
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#h> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 20 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :Has_NumberChapter ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Tertiary ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Has_NumberChapter ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 36 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Main ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#h> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 35 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :Has_NumberChapter ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#h> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 21 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Secondary ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#h> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 5 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :Has_NumberChapter ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Episodic ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

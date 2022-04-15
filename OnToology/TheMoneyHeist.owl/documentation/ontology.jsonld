@@ -1,0 +1,1243 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Main"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    }, {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    }, {
+      "@id" : "_:genid4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "20"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    }, {
+      "@id" : "_:genid30"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "21"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "36"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid51"
+    }, {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid45"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid53"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#authors" : [ {
+    "@language" : "es",
+    "@value" : "@authors:  \nSergio Torres Maiquez\nOscar Ventura Romero"
+  } ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name" : [ {
+    "@value" : "Serie: \"The Money Heist\"\nSerie: \"La Casa de Papel\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comment: Desarrollar una ontología sobre la información de una serie de televisión."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Link: https://la-casa-de-papel.fandom.com/es/wiki/La_Casa_de_Papel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/La_casa_de_papel"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Los actores masculinos de la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Las actrices femeninas de la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Alberto_Vicuña",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Alfonso_Egea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Alicia_Sierra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "21"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Ariadna_Cascales",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Arturo_Román",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Trabajadores del Banco de España"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Es el Banco de España, donde se desarrollan dos temporadas de la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/Banco_de_Espa%C3%B1a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Benito_Antoñanzas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "30"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/Berl%C3%ADn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bogotá",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El reparto de los actores según su participación en la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Los diferentes roles de los actores que han participado en la serie."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cincinnati",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Comisario_Sánchez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Compañero_de_celda_de_Berlón",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Prieto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Tamayo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Casa de campo donde se reunen para organizar las estrategias de los robos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lair"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Clientes del banco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#César_Gandía",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Denver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName" : [ {
+    "@value" : "El Profesor"
+  } ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "41"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actor"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/%C3%81lvaro_Morte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reparto Episódico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Estocolmo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Farmacétuica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Primera Parte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Primera Temporada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cuarta Parte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cuerpo Especial de la Policia GEOs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lugar de la primera y segunda parte donde se esconde \"El Profesor\". Angar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lair"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Corresponde al nivel de participación del personaje en la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Main"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Corresponde al rol del personaje en la serie. (Atracador, policia, extras, etc.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Military"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nos indica si un miembro de la banda muere durante la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nos indica el genero del personaje, masculino o femenino."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actor"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nos indica el apodo e algunos de los miembros de la banda."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cooresponde a los número de los capítulos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nos indica la cualidad más destacable del miembro de la banda."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nos indica el rol de los actores de la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Military"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Helsinki"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tenemos los actores trabajadores y los clientes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Jacinto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Joao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/Julia_Otero"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lugares donde tenemos las ubicaciones donde se encuentra el líder de los atracadores, “El Profesor” y donde se reúnen todos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Laura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lisboa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Diferentes ubicaciones y lugares principales donde se ha desarrollado la serie y las principales escenas."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Logroño",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Río",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Main",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reparto Principal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Manila",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mari_Carmen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mariví_Fuentes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Marsella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Colmenar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Pascua",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Military",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Equipo de Militares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Trabajadores de la Fábrica Nacional de la Moneda y Timbre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Moscú",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Médico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mónica_Gaztambide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Nacho_Abad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Nairobi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Es la Fábrica de la Casa de la Moneda y Timbre, donde se desarrollan varias temperadas de la serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://es.dbpedia.org/page/F%C3%A1brica_Nacional_de_Moneda_y_Timbre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Negociadores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Nikolai_Dimitrievich",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tenemos los actores extras, público, esporádicos, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Pablo_Ruiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Paco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Palermo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Pamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Paula_Vicuña",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identificación de los actores, diferenciados por sexo."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Pilar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Equipo de Policias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Agentes de Policia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Jefe de la Policia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Es la carpa de la policía, donde se desarrolla toda la estrategia de negociación de la policía con los atracadores."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Presentadora_de_Informativos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Raquel_Murillo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Es el restaurante de la primera y segunda temporada donde el profesor conoce a la primera negociadora de la policía."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tenemos los actores que son atracadores."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Río",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Las temporadas de la serie y sus partes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Segunda Parte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Segunda Temporada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reparto Secundario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tenemos los actores de la policía y de los militares."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Encontramos el reparto de los actores identificados en principal, segundario, terciario y episódico, y las temporadas de la serie."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Sofía",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress"
+  }, {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Suárez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reparto Terciario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tercera Parte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Tokio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lugar de la tercera y cuarta parte donde se esconde \"El Profesor\". Almacen de tanques de agua."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lair"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#authors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Autores"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nombre de la Ontología"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Ángel_Rubio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Comentarios"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Título de la ontología"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Versión de la ontología"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#equal",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#lessThan",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]
