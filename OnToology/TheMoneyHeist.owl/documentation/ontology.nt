@@ -1,0 +1,795 @@
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.semanticweb.org/oventura/TheMoneyHeist#authors> "@authors:  \nSergio Torres Maiquez\nOscar Ventura Romero"@es .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name> "Serie: \"The Money Heist\"\nSerie: \"La Casa de Papel\"" .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment: Desarrollar una ontología sobre la información de una serie de televisión."@es .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.w3.org/2000/01/rdf-schema#label> "Link: https://la-casa-de-papel.fandom.com/es/wiki/La_Casa_de_Papel" .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/La_casa_de_papel" .
+<http://www.semanticweb.org/oventura/TheMoneyHeist> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#authors
+<http://www.semanticweb.org/oventura/TheMoneyHeist#authors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name
+<http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#comment> "Título de la ontología" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Versión de la ontología" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/11/swrl#equal
+<http://www.w3.org/2003/11/swrl#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/11/swrl#lessThan
+<http://www.w3.org/2003/11/swrl#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Main> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde al nivel de participación del personaje en la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Military> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde al rol del personaje en la serie. (Atracador, policia, extras, etc.)" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Person> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender> <http://www.w3.org/2000/01/rdf-schema#comment> "Nos indica el genero del personaje, masculino o femenino." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Nos indica la cualidad más destacable del miembro de la banda." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead> <http://www.w3.org/2000/01/rdf-schema#comment> "Nos indica si un miembro de la banda muere durante la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nos indica el apodo e algunos de los miembros de la banda." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Cooresponde a los número de los capítulos" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Military> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Nos indica el rol de los actores de la serie." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Actor
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Person> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Los actores masculinos de la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Actress
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Person> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> <http://www.w3.org/2000/01/rdf-schema#comment> "Las actrices femeninas de la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> <http://www.w3.org/2000/01/rdf-schema#comment> "Trabajadores del Banco de España" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Location> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el Banco de España, donde se desarrollan dos temporadas de la serie." .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Banco_de_Espa%C3%B1a" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Cast
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Serie> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "El reparto de los actores según su participación en la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Character
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Los diferentes roles de los actores que han participado en la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House> <http://www.w3.org/2000/01/rdf-schema#comment> "Casa de campo donde se reunen para organizar las estrategias de los robos." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Customers
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> <http://www.w3.org/2000/01/rdf-schema#comment> "Clientes del banco" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic> <http://www.w3.org/2000/01/rdf-schema#comment> "Reparto Episódico" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part> <http://www.w3.org/2000/01/rdf-schema#comment> "Primera Parte" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Primera Temporada" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuarta Parte" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs
+<http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuerpo Especial de la Policia GEOs" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar de la primera y segunda parte donde se esconde \"El Profesor\". Angar" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> <http://www.w3.org/2000/01/rdf-schema#comment> "Tenemos los actores trabajadores y los clientes" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Lair
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Location> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugares donde tenemos las ubicaciones donde se encuentra el líder de los atracadores, “El Profesor” y donde se reúnen todos." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Location
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Diferentes ubicaciones y lugares principales donde se ha desarrollado la serie y las principales escenas." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Main
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Main> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Main> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Main> <http://www.w3.org/2000/01/rdf-schema#comment> "Reparto Principal" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Military
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Military> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Military> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Military> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Military> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipo de Militares" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> <http://www.w3.org/2000/01/rdf-schema#comment> "Trabajadores de la Fábrica Nacional de la Moneda y Timbre" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory
+<http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Location> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la Fábrica de la Casa de la Moneda y Timbre, donde se desarrollan varias temperadas de la serie." .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/F%C3%A1brica_Nacional_de_Moneda_y_Timbre" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> <http://www.w3.org/2000/01/rdf-schema#comment> "Negociadores" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Others
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Others> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Others> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Others> <http://www.w3.org/2000/01/rdf-schema#comment> "Tenemos los actores extras, público, esporádicos, etc." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Person
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificación de los actores, diferenciados por sexo." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Police
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipo de Policias" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "Agentes de Policia" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> <http://www.w3.org/2000/01/rdf-schema#comment> "Jefe de la Policia" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Location> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la carpa de la policía, donde se desarrolla toda la estrategia de negociación de la policía con los atracadores." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Location> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el restaurante de la primera y segunda temporada donde el profesor conoce a la primera negociadora de la policía." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Robber
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> <http://www.w3.org/2000/01/rdf-schema#comment> "Tenemos los actores que son atracadores." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Serie> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons> <http://www.w3.org/2000/01/rdf-schema#comment> "Las temporadas de la serie y sus partes." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part> <http://www.w3.org/2000/01/rdf-schema#comment> "Segunda Parte" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Segunda Temporada" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary> <http://www.w3.org/2000/01/rdf-schema#comment> "Reparto Secundario" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces> <http://www.w3.org/2000/01/rdf-schema#comment> "Tenemos los actores de la policía y de los militares." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Serie
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Serie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Serie> <http://www.w3.org/2000/01/rdf-schema#comment> "Encontramos el reparto de los actores identificados en principal, segundario, terciario y episódico, y las temporadas de la serie." .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Cast> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary> <http://www.w3.org/2000/01/rdf-schema#comment> "Reparto Terciario" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part> <http://www.w3.org/2000/01/rdf-schema#comment> "Tercera Parte" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/oventura/TheMoneyHeist#Lair> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar de la tercera y cuarta parte donde se esconde \"El Profesor\". Almacen de tanques de agua." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Alberto_Vicuña
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alberto_Vicuña> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alberto_Vicuña> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Alfonso_Egea
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alfonso_Egea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alfonso_Egea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Alicia_Sierra
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alicia_Sierra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alicia_Sierra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Alison_Parker> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Ariadna_Cascales
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Ariadna_Cascales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Ariadna_Cascales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Arturo_Román
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Arturo_Román> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Arturo_Román> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Benito_Antoñanzas
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Benito_Antoñanzas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Benito_Antoñanzas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Berlín> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Berl%C3%ADn" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Bogotá
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bogotá> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Bogotá> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Cincinnati
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Cincinnati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Cincinnati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Comisario_Sánchez
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Comisario_Sánchez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Comisario_Sánchez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Compañero_de_celda_de_Berlón
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Compañero_de_celda_de_Berlón> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Compañero_de_celda_de_Berlón> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Prieto
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Prieto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Tamayo
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Tamayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Coronel_Tamayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#César_Gandía
+<http://www.semanticweb.org/oventura/TheMoneyHeist#César_Gandía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#César_Gandía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Denver
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Denver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Denver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actor> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName> "El Profesor" .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> "41"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#El_Profesor> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/%C3%81lvaro_Morte" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Estocolmo
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Estocolmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Estocolmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Farmacétuica
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Farmacétuica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Farmacétuica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Helsinki> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Helsinki" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Jacinto
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Jacinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Jacinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Joao
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Joao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Joao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Julia_Otero> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Julia_Otero" .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Laura
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Laura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Laura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Lisboa
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Lisboa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Lisboa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Logroño
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Logroño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Logroño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Río
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Río> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Río> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Madre_de_Tokio> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Manila
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Manila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Manila> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mari_Carmen
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mari_Carmen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mari_Carmen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mariví_Fuentes
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mariví_Fuentes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mariví_Fuentes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Marsella
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Marsella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Marsella> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Colmenar
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Colmenar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Colmenar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Pascua
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Pascua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mercedes_Pascua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Moscú
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Moscú> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Moscú> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Médico
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Médico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Médico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Mónica_Gaztambide
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mónica_Gaztambide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Mónica_Gaztambide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Nacho_Abad
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nacho_Abad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nacho_Abad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Nairobi
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nairobi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nairobi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Nikolai_Dimitrievich
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nikolai_Dimitrievich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Nikolai_Dimitrievich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Oslo> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Pablo_Ruiz
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pablo_Ruiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pablo_Ruiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Customers> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Paco
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Paco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Paco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Palermo
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Palermo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Palermo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Pamplona
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Paula_Vicuña
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Paula_Vicuña> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Paula_Vicuña> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_1
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_2
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Periodista_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Pilar
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Pilar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Presentadora_de_Informativos
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Presentadora_de_Informativos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Presentadora_de_Informativos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Raquel_Murillo
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Raquel_Murillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Raquel_Murillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Río
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Río> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Río> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Sofía
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Sofía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Sofía> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Actress> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Susana_Griso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Others> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Suárez
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Suárez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Suárez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Tokio
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Tokio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Tokio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Robber> .
+# 
+# http://www.semanticweb.org/oventura/TheMoneyHeist#Ángel_Rubio
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Ángel_Rubio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/oventura/TheMoneyHeist#Ángel_Rubio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent> .
+# 
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/oventura/TheMoneyHeist#authors> <http://www.w3.org/2000/01/rdf-schema#comment> "Autores" .
+# 
+<http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de la Ontología" .
+# 
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comentarios" .
+# 
+# 
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid13 <http://www.w3.org/2003/11/swrl#body> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#arguments> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#arguments> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/2003/11/swrl#head> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid2 <http://www.w3.org/2003/11/swrl#body> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2003/11/swrl#arguments> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h> .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid8 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid10 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid2 <http://www.w3.org/2003/11/swrl#head> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid12 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Main> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid28 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#arguments> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h> .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid34 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#arguments> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#arguments> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#h> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid51 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Character> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid53 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

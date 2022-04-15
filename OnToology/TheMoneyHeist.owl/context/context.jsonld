@@ -1,0 +1,174 @@
+{
+  "@context" : {
+    "Police_Agent" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Agent"
+    },
+    "Mint_Workers" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Mint_Workers"
+    },
+    "Has_Gender" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Gender",
+      "@type" : "@id"
+    },
+    "Has_Character" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Character",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Police" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police"
+    },
+    "Hostage" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hostage"
+    },
+    "Main" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Main"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Security_Forces" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Security_Forces"
+    },
+    "Cast" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Cast"
+    },
+    "Actress" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actress"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Military" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Military"
+    },
+    "authors" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#authors"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Character"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Location"
+    },
+    "Secondary" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Secondary"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Person"
+    },
+    "First_Part" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Part"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Actor"
+    },
+    "Has_Cast" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Cast",
+      "@type" : "@id"
+    },
+    "Episodic" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Episodic"
+    },
+    "Bank_of_Spain" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_of_Spain"
+    },
+    "Robber" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Robber"
+    },
+    "First_Season" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#First_Season"
+    },
+    "Country_House" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Country_House"
+    },
+    "Lair" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Lair"
+    },
+    "Police_Tent" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Tent"
+    },
+    "Tertiary" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Tertiary"
+    },
+    "Customers" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Customers"
+    },
+    "Police_Chief" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Police_Chief"
+    },
+    "Third_Part" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Third_Part"
+    },
+    "Negotiator" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Negotiator"
+    },
+    "Restaurant" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Restaurant"
+    },
+    "Has_Role" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Role",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Fourth_Part" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Fourth_Part"
+    },
+    "Second_Season" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Season"
+    },
+    "Seasons" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Seasons"
+    },
+    "Second_Part" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Second_Part"
+    },
+    "Has_ProminentAttribute" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_ProminentAttribute",
+      "@type" : "@id"
+    },
+    "GEOs" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#GEOs"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "National_Currency_and_Stamp_Factory" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#National_Currency_and_Stamp_Factory"
+    },
+    "Others" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Others"
+    },
+    "ontology_name" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#ontology_name"
+    },
+    "Serie" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Serie"
+    },
+    "Hangar" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Hangar"
+    },
+    "Bank_Workers" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Bank_Workers"
+    },
+    "Has_Dead" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_Dead",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Has_NumberChapter" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NumberChapter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Warehouse_Water_Tank" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Warehouse_Water_Tank"
+    },
+    "Has_NickName" : {
+      "@id" : "http://www.semanticweb.org/oventura/TheMoneyHeist#Has_NickName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
